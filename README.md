@@ -2,6 +2,6 @@
 droidblox **refactored** into kotlin
 
 # TODO:
-- [] optimize it
-- [] refactor kivy gui to jetpack compose
-- [] release it
+- [ ] optimize it
+- [ ] refactor Kivy GUI to Jetpack Compose
+- [ ] release it
