@@ -4,11 +4,8 @@ import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
 
 @Serializable
-data class RobloxGame(
+data class RobloxGameCreator(
     val name: String,
-    val creator: RobloxGameCreator,
-    @SerialName("rootPlaceId")
-    val placeId: Long,
-    @SerialName("id")
-    val universeId: Long
+    @SerialName("hasVerifiedBadge")
+    val isVerified: Boolean
 )

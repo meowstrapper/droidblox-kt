@@ -15,7 +15,7 @@ class SettingsManager(
         get() = sharedPreferences.getBoolean("enableActivityTracking", true)
         set(value) = sharedPreferences.edit { putBoolean("enableActivityTracking", value) }
     var showServerLocation: Boolean
-        get() = sharedPreferences.getBoolean("showServerLocation", true)
+        get() = sharedPreferences.getBoolean("showServerLocation", false)
         set(value) = sharedPreferences.edit { putBoolean("showServerLocation", value) }
     var token: String?
         get() = sharedPreferences.getString("token", null)
@@ -24,9 +24,9 @@ class SettingsManager(
         get() = sharedPreferences.getBoolean("showGameActivity", true)
         set(value: Boolean) = sharedPreferences.edit { putBoolean("showGameActivity", value) }
     var allowActivityJoining: Boolean
-        get() = sharedPreferences.getBoolean("allowActivityJoining", true)
+        get() = sharedPreferences.getBoolean("allowActivityJoining", false)
         set(value) = sharedPreferences.edit { putBoolean("allowActivityJoining", value) }
     var showRobloxUser: Boolean
-        get() = sharedPreferences.getBoolean("showRobloxUser", true)
+        get() = sharedPreferences.getBoolean("showRobloxUser", false)
         set(value) = sharedPreferences.edit { putBoolean("showRobloxUser", value) }
 }

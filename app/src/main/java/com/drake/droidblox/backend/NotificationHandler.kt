@@ -32,7 +32,7 @@ class NotificationHandler(
             .setContentTitle(title)
             .setContentText(text)
             .setAutoCancel(true)
-            .setSmallIcon(R.mipmap.ic_launcher)
+            .setSmallIcon(R.drawable.ic_notification)
 
         Log.d(TAG, "Sending out notification")
         notifService.notify(0, notification.build())

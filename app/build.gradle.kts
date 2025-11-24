@@ -55,10 +55,14 @@ dependencies {
     implementation(libs.ktor.client.core)
     implementation(libs.org.jetbrains.kotlin.plugin.serialization.gradle.plugin)
 
+    implementation("androidx.navigation:navigation-compose:2.9.6")
+    implementation("androidx.compose.material:material-icons-core:1.7.8")
     implementation("io.ktor:ktor-client-content-negotiation:3.3.2")
     implementation("io.ktor:ktor-serialization-kotlinx-json:3.3.2")
     implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.9.0")
     implementation("com.github.dead8309:KizzyRPC:1.0.71")
+    implementation("io.coil-kt.coil3:coil-compose:3.3.0")
+    implementation("io.coil-kt.coil3:coil-network-ktor3:3.3.0")
     
     testImplementation(libs.junit)
     
