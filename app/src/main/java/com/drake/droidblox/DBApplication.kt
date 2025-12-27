@@ -1,26 +1,22 @@
 package com.drake.droidblox
 
-//import android.app.ActivityManager
 import android.app.Application
 import android.content.Context
-//import android.os.Debug
-//import android.os.Handler
-//import android.os.Looper
 import android.util.Log
-import com.drake.droidblox.backend.sharedprefs.playsession.PlaySessionsManager
-import com.drake.droidblox.backend.sharedprefs.SettingsManager
+import com.drake.droidblox.sharedprefs.PlaySessionsManager
+import com.drake.droidblox.sharedprefs.SettingsManager
+import dagger.hilt.android.HiltAndroidApp
 
+@HiltAndroidApp
 class DBApplication : Application() {
-    private val TAG = "DBApplication"
-
-    val settingsManager: SettingsManager by lazy { SettingsManager(applicationContext) }
-    val playSessionsManager: PlaySessionsManager by lazy { PlaySessionsManager(applicationContext) }
-
     companion object {
-        // lets just make sure every class has access to it..
+        private const val TAG = "DBApplication"
         lateinit var instance: DBApplication
             private set
     }
+
+    val settingsManager: SettingsManager by lazy { SettingsManager(applicationContext) }
+    val playSessionsManager: PlaySessionsManager by lazy { PlaySessionsManager(applicationContext) }
 
     override fun onCreate() {
         super.onCreate()
