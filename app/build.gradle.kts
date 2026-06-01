@@ -10,7 +10,7 @@ plugins {
     kotlin("kapt")
 
     // Ktor
-    kotlin("plugin.serialization") version "2.2.0"
+    kotlin("plugin.serialization")
 
     // Hilt
     alias(libs.plugins.dagger.hilt.android)
@@ -93,7 +93,7 @@ dependencies {
     debugImplementation(libs.androidx.compose.ui.tooling)
 
     // Apktool
-    implementation(files("libs/apktool.jar"))
+    //implementation(files("libs/apktool.jar"))
     
     // Coil3
     implementation(libs.coil3.compose)
